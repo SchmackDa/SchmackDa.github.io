@@ -1,0 +1,82 @@
+/* .mdl-collapse::first-line {
+	margin-left: 1em;
+} */
+
+.mdl-collapse {
+	margin-left: 2em;
+}
+
+.mdl-collapse.mdl-collapse--opened {
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.mdl-collapse.mdl-collapse--opened+.mdl-collapse.mdl-collapse--opened {
+	border-top: none;
+	margin-top: 0;
+}
+
+.mdl-collapse .mdl-collapse__content-wrapper {
+	overflow: hidden;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.mdl-collapse .mdl-collapse__content {
+	transition-property: margin-top;
+	transition-duration: 0.2s;
+	margin-left: 5%;
+}
+
+.mdl-collapse .mdl-collapse__icon {
+	transition-property: transform;
+	transition-duration: 0.2s;
+	color: #BCE0FD;
+	position: relative;
+	right: 6px;
+	margin-top: -3px;
+}
+
+.mdl-collapse.mdl-collapse--opened .mdl-collapse__icon {
+	transform: rotate(-180deg);
+}
+
+.mdl-collapse.mdl-collapse--opened .mdl-collapse__content {
+	margin-top: 0 !important;
+}
+
+.mdl-collapse__content {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+.mdl-collapse__button {
+	font-family: "Lexend", Roboto, "Comic Sans MS", sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+.mdl-collapse__button::first-line {
+	margin-left: 1em;
+}
+
+.mdl-navigation__link, .mdl-collapse__button {
+	color: #FFFFFF;
+}
+
+.mdl-collapse.mdl-collapse--opened .mdl-collapse__button {
+	color: #000000;
+}
+
+@media screen and (max-width: 950px) {
+	#content {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
